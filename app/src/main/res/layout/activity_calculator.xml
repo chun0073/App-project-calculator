@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <EditText
+        android:id="@+id/calText1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/calText2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calText1" />
+
+    <Button
+        android:id="@+id/calButt1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/calButt0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButt3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/calButtE"
+        app:layout_constraintStart_toEndOf="@+id/calButt2" />
+
+    <Button
+        android:id="@+id/calButt2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/calButtDot"
+        app:layout_constraintStart_toEndOf="@+id/calButt1" />
+
+    <Button
+        android:id="@+id/calButt0"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="40dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButtDot"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calButt0" />
+
+    <Button
+        android:id="@+id/calButtE"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calButtDot" />
+
+    <Button
+        android:id="@+id/calButt4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/calButt1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButt5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/calButt2"
+        app:layout_constraintStart_toEndOf="@+id/calButt4" />
+
+    <Button
+        android:id="@+id/calButt6"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/calButt3"
+        app:layout_constraintStart_toEndOf="@+id/calButt5" />
+
+    <Button
+        android:id="@+id/calButt7"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/calButt4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButt8"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/calButt5"
+        app:layout_constraintStart_toEndOf="@+id/calButt7" />
+
+    <Button
+        android:id="@+id/calButt9"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/calButt6"
+        app:layout_constraintStart_toEndOf="@+id/calButt8" />
+
+    <Button
+        android:id="@+id/calButtp1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="("
+        app:layout_constraintBottom_toTopOf="@+id/calButt7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButtp2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text=")"
+        app:layout_constraintBottom_toTopOf="@+id/calButt8"
+        app:layout_constraintStart_toEndOf="@+id/calButtp1" />
+
+    <Button
+        android:id="@+id/calButtpi"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/pi"
+        app:layout_constraintBottom_toTopOf="@+id/calButt9"
+        app:layout_constraintStart_toEndOf="@+id/calButtp2" />
+
+    <Button
+        android:id="@+id/calButtcos"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="cos"
+        app:layout_constraintBottom_toTopOf="@+id/calButtp2"
+        app:layout_constraintStart_toEndOf="@+id/calButtsin" />
+
+    <Button
+        android:id="@+id/calButtsin"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:text="sin"
+        app:layout_constraintBottom_toTopOf="@+id/calButtp1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/calButttan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="tan"
+        app:layout_constraintBottom_toTopOf="@+id/calButtpi"
+        app:layout_constraintStart_toEndOf="@+id/calButtcos" />
+
+    <Button
+        android:id="@+id/calButtmore"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Extention"
+        app:layout_constraintBottom_toTopOf="@+id/calButtxpown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButtsqrt"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/sqrt"
+        app:layout_constraintBottom_toTopOf="@+id/calButtswitch"
+        app:layout_constraintStart_toEndOf="@+id/calButtlog" />
+
+    <Button
+        android:id="@+id/calButtclear"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/calButtsqrt"
+        app:layout_constraintStart_toEndOf="@+id/calButtmore" />
+
+    <Button
+        android:id="@+id/calButtlog"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="log"
+        app:layout_constraintBottom_toTopOf="@+id/calButttan"
+        app:layout_constraintStart_toEndOf="@+id/calButtxpown" />
+
+    <Button
+        android:id="@+id/calButtxsquare"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/square"
+        app:layout_constraintBottom_toTopOf="@+id/calButtsin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calButtback"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/backspace"
+        app:layout_constraintBottom_toTopOf="@+id/calButtdivide"
+        app:layout_constraintStart_toEndOf="@+id/calButtpi" />
+
+    <Button
+        android:id="@+id/calButtxpown"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="@string/xpown"
+        app:layout_constraintBottom_toTopOf="@+id/calButtcos"
+        app:layout_constraintStart_toEndOf="@+id/calButtxsquare" />
+
+    <Button
+        android:id="@+id/calButtplus"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calButtE" />
+
+    <Button
+        android:id="@+id/calButtminus"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/calButtplus"
+        app:layout_constraintStart_toEndOf="@+id/calButt3" />
+
+    <Button
+        android:id="@+id/calButtmultiply"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/calButtminus"
+        app:layout_constraintStart_toEndOf="@+id/calButt6" />
+
+    <Button
+        android:id="@+id/calButtdivide"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/divide"
+        app:layout_constraintBottom_toTopOf="@+id/calButtmultiply"
+        app:layout_constraintStart_toEndOf="@+id/calButt9" />
+
+    <Button
+        android:id="@+id/calButtswitch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="switch"
+        app:layout_constraintBottom_toTopOf="@+id/calButtback"
+        app:layout_constraintStart_toEndOf="@+id/calButttan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VectorMain">
+
+    <TextView
+        android:id="@+id/vec1_x"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/angle1"
+        app:layout_constraintTop_toBottomOf="@+id/vec1_decompose" />
+
+    <TextView
+        android:id="@+id/vec1_y"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Y"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/vec1_x"
+        app:layout_constraintTop_toBottomOf="@+id/vec1_decompose" />
+
+    <EditText
+        android:id="@+id/magnitude1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="magnitude"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/angle1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="angle"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/vec1_x"
+        app:layout_constraintStart_toEndOf="@+id/magnitude1"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Vector A"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/vec1_decompose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/vec1_decompose"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:text="Decompose"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/vec2_x"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/vec2_y"
+        app:layout_constraintStart_toEndOf="@+id/angle2"
+        app:layout_constraintTop_toBottomOf="@+id/vec2_decompose" />
+
+    <Button
+        android:id="@+id/vec2_decompose"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:text="Decompose"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/vec1_x" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Vector B"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/vec2_decompose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magnitude1" />
+
+    <EditText
+        android:id="@+id/magnitude2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="magnitude"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/angle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/angle2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="angle"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/magnitude2"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/vec2_y"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Y"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/vec2_x"
+        app:layout_constraintTop_toBottomOf="@+id/vec2_decompose" />
+
+
+    <TextView
+        android:id="@+id/vec3_x"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/angle3"
+        app:layout_constraintTop_toBottomOf="@+id/vec3_decompose" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Vector C"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/vec3_decompose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magnitude2" />
+
+    <EditText
+        android:id="@+id/magnitude3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="magnitude"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/angle3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="angle"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/vec3_x"
+        app:layout_constraintStart_toEndOf="@+id/magnitude3"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/vec3_y"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Y"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/vec3_x"
+        app:layout_constraintTop_toBottomOf="@+id/vec3_decompose" />
+
+    <Button
+        android:id="@+id/vec3_decompose"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Decompose"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/vec2_x" />
+
+
+    <Button
+        android:id="@+id/Dot"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="27dp"
+        android:text="Dot product"
+        app:layout_constraintStart_toEndOf="@+id/Add"
+        app:layout_constraintTop_toBottomOf="@+id/vec3_x" />
+
+    <TextView
+        android:id="@+id/vec_Rx"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="X"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/angleR"
+        app:layout_constraintTop_toBottomOf="@+id/Dot" />
+
+    <TextView
+        android:id="@+id/vec_Ry"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Y"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/vec_Rx"
+        app:layout_constraintTop_toBottomOf="@+id/Dot" />
+
+    <Button
+        android:id="@+id/Add"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="27dp"
+        android:text="ADD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magnitude3" />
+
+    <TextView
+        android:id="@+id/magnitudeR"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="magnitude"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Add" />
+
+    <TextView
+        android:id="@+id/angleR"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="angle"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/magnitudeR"
+        app:layout_constraintTop_toBottomOf="@+id/Add" />
+
+    <Button
+        android:id="@+id/vToM"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="50dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
